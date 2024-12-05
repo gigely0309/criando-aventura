@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Aventura na Ilha Deserta</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0: Início -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/ilha-deserta.png" alt="Ilha deserta">
+            <p>Você acorda em uma praia deserta após o naufrágio do seu barco. Está sozinho, com fome e sem saber onde está. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">Explorar a floresta</button>
+            <button class="btn-proximo" data-proximo="2">Construir um abrigo na praia</button>
+        </div>
+
+        <!-- Passo 1: Explorar a floresta -->
+        <div class="passo" id="passo-1">
+            <p>Você encontra frutas e água fresca, mas também percebe sinais de animais selvagens. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="3">Coletar comida e voltar à praia</button>
+            <button class="btn-proximo" data-proximo="4">Ir mais fundo na floresta</button>
+        </div>
+
+        <!-- Passo 2: Construir um abrigo -->
+        <div class="passo" id="passo-2">
+            <p>Você constrói um abrigo e se protege do sol, mas logo percebe que precisa de comida. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="5">Sair para pescar</button>
+            <button class="btn-proximo" data-proximo="6">Explorar os arredores do abrigo</button>
+        </div>
+
+        <!-- Passo 3: Voltar à praia -->
+        <div class="passo" id="passo-3">
+            <p>Você volta à praia com comida suficiente para um dia. Enquanto come, vê um barco ao longe. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="7">Acender uma fogueira para chamar atenção</button>
+            <button class="btn-proximo" data-proximo="8">Tentar nadar até o barco</button>
+        </div>
+
+        <!-- Passo 4: Mais fundo na floresta -->
+        <div class="passo" id="passo-4">
+            <p>Você encontra uma caverna com um urso hibernando. Infelizmente, o urso acorda e você não sobrevive.</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 5: Pescar -->
+        <div class="passo" id="passo-5">
+            <p>Você pesca um peixe, mas é picado por um peixe venenoso. Você começa a se sentir mal e não consegue sobreviver.</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 6: Explorar arredores -->
+        <div class="passo" id="passo-6">
+            <p>Você encontra um baú deixado por antigos exploradores. Dentro, há ferramentas e um mapa da ilha. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Seguir o mapa</button>
+            <button class="btn-proximo" data-proximo="10">Usar as ferramentas para melhorar o abrigo</button>
+        </div>
+
+        <!-- Passo 7: Fogueira -->
+        <div class="passo" id="passo-7">
+            <p>O barco vê sua fogueira e vem resgatá-lo. Você foi salvo! Parabéns!</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 8: Nadar -->
+        <div class="passo" id="passo-8">
+            <p>Você tenta nadar até o barco, mas a correnteza é forte e você se afoga. Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 9: Seguir o mapa -->
+        <div class="passo" id="passo-9">
+            <p>Seguindo o mapa, você encontra um ponto de sinalização. Um helicóptero sobrevoa e te resgata! Parabéns!</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 10: Melhorar abrigo -->
+        <div class="passo" id="passo-10">
+            <p>Você melhora o abrigo, mas uma tempestade destrói tudo durante a noite. Infelizmente, você não sobrevive.</p>
+            <p>Fim da aventura!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
